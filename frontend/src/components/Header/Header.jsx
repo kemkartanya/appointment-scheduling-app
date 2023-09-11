@@ -56,12 +56,13 @@ const Header = () => {
             <img src={logo} alt='' />
           </div>
 
-          {/* =================== menu =================== */}
-          <div className='navigation' ref={menuRef} onClick={toggleMenu}>
+          {/* =================== nav right =================== */}
+          {/* <div className='navigation' ref={menuRef} onClick={toggleMenu}>
             <ul className='menu flex items-center gap-[2.7rem]'>
               {navLinks.map((link, index) => (
                 <NavLink
                 to={link.path}
+                key={index}
                 className={navClass =>
                   navClass.isActive
                     ? "text-primaryColor text-[16px] leading-7 font-[600]"
@@ -72,10 +73,26 @@ const Header = () => {
                 </NavLink>
               ))}
             </ul>
-          </div>
+          </div> */}
 
-          {/* =================== nav right =================== */}
+          {/* =================== menu =================== */}
           <div className='flex items-center gap-4'>
+
+            <ul className=' flex items-center gap-[2.7rem]'>
+              {navLinks.map((link, index) => (
+                <NavLink
+                to={link.path}
+                key={index}
+                className={navClass =>
+                  navClass.isActive
+                    ? "text-primaryColor text-[16px] leading-7 font-[600]"
+                    : "text-textColor text-[16px] leading-7 font-[500] hover:text-primaryColor"
+                }
+              >
+                  {link.display}
+                </NavLink>
+              ))}
+            </ul>
 
             <div className='hidden'>
               <Link to='/'>
