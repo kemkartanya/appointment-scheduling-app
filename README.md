@@ -1,3 +1,3 @@
 # Full Stack Development Project 
-# Doctor Appointment Booking App
-# Made using react.js, node.js & mongodb
+## Doctor Appointment Booking App
+## Made using react.js, node.js & mongodb
