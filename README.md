@@ -1,13 +1,13 @@
 # Doctor Appointment Booking App
 
 **steps to install app & run on local:**
-step 1: git clone https://github.com/kemkartanya/appointment-scheduling-app.git
-step 2: cd appointment-scheduling-app
-step 3: npm install 
-step 4: cd frontend, then 'npm run dev' (for running frontend)
-step 3: need to create account on MongoDB Atlas, and connect it to backend & also JWT authentication in .env file 
-step 5: open new terminal, cd backend, then 'npm run start-dev'
-step 6: hurray! the website is running on localhost.
+1. git clone https://github.com/kemkartanya/appointment-scheduling-app.git
+2. cd appointment-scheduling-app
+3. npm install 
+4. cd frontend, then 'npm run dev' (for running frontend)
+5. need to create account on MongoDB Atlas, and connect it to backend & also JWT authentication in .env file 
+6. open new terminal, cd backend, then 'npm run start-dev'
+7. hurray! the website is running on localhost.
 
 **techstack used**
 frontend: html, css, javascript, reactjs, tailwindcss, vitejs
